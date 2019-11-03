@@ -16,30 +16,31 @@ module.exports = {
 	injectChanges: true,
 
 	// Style options.
-	styleSRC: './assets/scss/app.scss', // Path to main .scss file.
+	styleSRC: './src/assets/scss/app.scss', // Path to main .scss file.
+	auxSTYLES: [ './node_modules/foundation-sites/scss', './node_modules/motion-ui/src' ], 
 	styleDestination: './dist/assets/css/', // Path to place the compiled CSS file. Default set to root folder.
 	outputStyle: 'compact', // Available options → 'compact' or 'compressed' or 'nested' or 'expanded'
 	errLogToConsole: true,
 	precision: 10,
 
 	// JS Vendor options.
-	jsVendorSRC: './assets/js/lib/*.js', // Path to JS vendor folder.
+	jsVendorSRC: './src/assets/js/lib/*.js', // Path to JS vendor folder.
 	jsVendorDestination: './dist/assets/lib/js/', // Path to place the compiled JS vendors file.
 	jsVendorFile: 'vendor', // Compiled JS vendors file name. Default set to vendors i.e. vendors.js.
 
 	// JS Custom options.
-	jsCustomSRC: './assets/js/*.js', // Path to JS custom scripts folder.
+	jsCustomSRC: './src/assets/js/*.js', // Path to JS custom scripts folder.
 	jsCustomDestination: './dist/assets/js/', // Path to place the compiled JS custom scripts file.
 	jsCustomFile: 'custom', // Compiled JS custom file name. Default set to custom i.e. custom.js.
 
 	// Images options.
-	imgSRC: './assets/images/**/*', // Source folder of images which should be optimized and watched. You can also specify types e.g. raw/**.{png,jpg,gif} in the glob.
+	imgSRC: './src/assets/images/**/*', // Source folder of images which should be optimized and watched. You can also specify types e.g. raw/**.{png,jpg,gif} in the glob.
 	imgDST: './dist/assets/images/', // Destination folder of optimized images. Must be different from the imagesSRC folder.
 
 	// Watch files paths.
-	watchStyles: './assets/css/**/*.scss', // Path to all *.scss files inside css folder and inside them.
-	watchJsVendor: './assets/js/lib/*.js', // Path to all vendor JS files.
-	watchJsCustom: './assets/js/*.js', // Path to all custom JS files.
+	watchStyles: './src/assets/scss/**/*.scss', // Path to all *.scss files inside css folder and inside them.
+	watchJsVendor: './src/assets/js/lib/*.js', // Path to all vendor JS files.
+	watchJsCustom: './src/assets/js/*.js', // Path to all custom JS files.
 	watchPhp: './**/*.php', // Path to all PHP files.
 
 	// Translation options.

@@ -119,6 +119,7 @@ gulp.task( 'styles', () => {
 		.pipe( sourcemaps.init() )
 		.pipe(
 			sass({
+				includePaths: config.auxSTYLES,
 				errLogToConsole: config.errLogToConsole,
 				outputStyle: config.outputStyle,
 				precision: config.precision
@@ -165,6 +166,7 @@ gulp.task( 'stylesRTL', () => {
 		.pipe( sourcemaps.init() )
 		.pipe(
 			sass({
+				includePaths: config.auxSTYLES,
 				errLogToConsole: config.errLogToConsole,
 				outputStyle: config.outputStyle,
 				precision: config.precision
